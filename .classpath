@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="common/com/base/|common/com/|common/|webroot/|web/|test2/|src/com/base/|src/com/|src/|servletSource/|quartzSource/org/|quartzSource/|quartz/org/quartz/|quartz/org/|quartz/|logs/|learnjavaee/com/test/|learnjavaee/com/|learnjavaee/|image/|i18n/|dp/com/dream/dp/|dp/com/dream/|dp/com/|dp/|doc/sql/|doc/|config/|common/|config/|dp/|i18n/|learnjavaee/|quartz/|quartzSource/|servletSource/|test2/" kind="src" path=""/>
+	<classpathentry kind="src" path="common"/>
+	<classpathentry kind="src" path="config"/>
+	<classpathentry kind="src" path="dp"/>
+	<classpathentry kind="src" path="i18n"/>
+	<classpathentry kind="src" path="learnjavaee"/>
+	<classpathentry kind="src" path="quartz"/>
+	<classpathentry kind="src" path="quartzSource"/>
+	<classpathentry kind="src" path="servletSource"/>
+	<classpathentry kind="src" path="test2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
