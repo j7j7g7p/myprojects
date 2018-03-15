@@ -1,9 +1,4 @@
+/classloader/
 /com/
-/javax/
-/json.txt
 /org/
-/res_en_US.properties
-/res_zh_CH.properties
-/saxtest.xml
-/singleton.properties
-/singleton20170318035057.properties
+/javax/
