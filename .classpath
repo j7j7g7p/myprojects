@@ -8,6 +8,7 @@
 	<classpathentry kind="src" path="quartz"/>
 	<classpathentry kind="src" path="quartzSource"/>
 	<classpathentry kind="src" path="servletSource"/>
+	<classpathentry kind="src" path="newjdk"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="lib/javamail-1.4.4/mail.jar"/>
 	<classpathentry kind="lib" path="lib/javamail-1.4.4/lib/dsn.jar"/>
@@ -40,5 +41,6 @@
 	<classpathentry kind="lib" path="lib/quartz/quartz-jobs-2.2.3.jar"/>
 	<classpathentry kind="lib" path="lib/quartz/terracotta-toolkit-1.1-api-2.0.0-patched.jar"/>
 	<classpathentry kind="lib" path="lib/quartz/terracotta-toolkit-runtime-4.3.4.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
