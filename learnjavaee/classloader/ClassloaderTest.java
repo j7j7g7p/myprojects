@@ -41,10 +41,10 @@ public class ClassloaderTest {
 //	file:/E:/jdk1.8.0_92-64/jre/lib/jfr.jar
 //	file:/E:/jdk1.8.0_92-64/jre/classes
 	public static void bootStrapClassLoader() {
-		URL[] urls = sun.misc.Launcher.getBootstrapClassPath().getURLs();  
-		for (int i = 0; i < urls.length; i++) {  
-		    System.out.println(urls[i].toExternalForm());  
-		} 
+//		URL[] urls = sun.misc.Launcher.getBootstrapClassPath().getURLs();  
+//		for (int i = 0; i < urls.length; i++) {  
+//		    System.out.println(urls[i].toExternalForm());  
+//		} 
 	}
 	
 	
