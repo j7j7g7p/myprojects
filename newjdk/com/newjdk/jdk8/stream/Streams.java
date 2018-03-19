@@ -69,10 +69,10 @@ public class Streams {
 			    .mapToLong( weigth -> ( long )( weigth * 100 ) ) // LongStream
 			    .mapToObj( percentage -> percentage + "%" )      // Stream< String> 
 			    .collect( Collectors.toList() );                 // List< String > 
-			 
+			 //Read file nio iterator
 			try {				
 				System.out.println( result );
-				String filename  = "D:\\Employee.txt";
+				String filename  = "stream.txt";
 				final Path path = new File( filename ).toPath();
 				try( Stream< String > lines = Files.lines( path, StandardCharsets.UTF_8 ) ) {
 					lines.onClose( () -> System.out.println("Done!") ).forEach( System.out::println );
