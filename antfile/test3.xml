@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<project name="Hello World Project" default="info">
+	<!-- property file-->
+   <property file="build.properties"/>
+   <property name="src" value="ant"/>
+   <target name="info">
+      <echo>Apache Ant version is ${ant.version} - You are at ${sitename} </echo>
+		<echo>=========================</echo>
+		<echo>output.dir ${output.dir}</echo>
+		<echo>=========================</echo>
+		<echo>env.J2EE_HOME ${env.J2EE_HOME}</echo>
+		<echo>=========================</echo>
+		<echo>current.versio ${current.version}</echo>
+   </target>
+   
+	<fileset dir="${src}" casesensitive="yes">
+	   <include name="**/*.java"/>
+	   <exclude name="**/*Stub*"/>
+	</fileset>
+	
+	<patternset id="java.files.without.stubs">
+	   <include name="src/**/*.java"/>
+	   <exclude name="src/**/*Stub*"/>
+	</patternset>
+
+	<filelist id="config.files" dir="${webapp.src.folder}">
+	   <file name="applicationConfig.xml"/>
+	   <file name="faces-config.xml"/>
+	   <file name="web.xml"/>
+	   <file name="portlet.xml"/>
+	</filelist>
+
+	<fileset dir="${src}" casesensitive="yes">
+	   <patternset refid="java.files.without.stubs"/>
+	</fileset>
+
+	<!--
+	<copy todir="${output.dir}">
+	   <fileset dir="${releasenotes.dir}" includes="**/*.txt"/>
+	   <filterset>
+	      <filter token="VERSION" value="${current.version}"/>
+	   </filterset>
+	</copy>
+	-->
+	<copy todir="${output.dir}">
+	   <fileset dir="${releasenotes.dir}" includes="**/*.txt"/>
+	   <filterset>
+	      <filter token="VERSION" value="${current.version}"/>
+	   </filterset>
+	</copy>
+
+	<path id="build.classpath.jar">
+	   <pathelement path="${env.J2EE_HOME}/${j2ee.jar}"/>
+	   <fileset dir="lib">
+	      <include name="**/*.jar"/>
+	   </fileset>
+	</path>
+</project>

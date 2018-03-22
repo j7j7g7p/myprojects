@@ -1,0 +1,6 @@
+<!--测试模块使用 -->
+<dataset>
+	<sql name="sql1" memo="测试1">
+		SELECT * FROM t1 where id=?
+	</sql>faces-config.xml
+</dataset>

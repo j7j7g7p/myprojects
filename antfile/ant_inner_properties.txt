@@ -1,0 +1,13 @@
+ant.file	表示 buildfile 的绝对路径。
+ant.version	表示 Ant 的版本。
+basedir	表示 project 基目录的绝对路径。
+ant.jave.version	表示 Ant 检测到的 JDK 的版本。
+ant.project.name	表示当前指定的 project 的名字。
+ant.project.default-target	表示当前项目的默认目标。
+ant.project.invoked-targets	表示被当前项目调用的一系列用逗号分隔开的目标。
+ant.core.lib	表示 Ant jar 文件的绝对路径。
+ant.home	表示 Ant 安装的根目录。
+ant.library.dir	表示 Ant 函数库，一般情况下为 ANT_HOME/lib 文件的根目录。
+
+env.J2EE_HOME 指向环境变量 J2EE_HOME 。
+j2ee.jar 指向在 J2EE 基础文件夹下面的名为 J2EE jar 的文件。
