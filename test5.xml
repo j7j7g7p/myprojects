@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<project  name="tasks"  default="main">
+       <property  name="build.dir"  location="build"/>
+       <target  name="init">
+              <mkdir  dir="${build.dir}"/>
+       </target>
+       <target  name="compile"  depends="init">
+              <javac  srcdir="ant"  destdir="${build.dir}"/>
+       </target>
+	   <target  name="simpletask"  depends="compile">
+	          <taskdef  name="simpletask"
+	 					classname="com.ant.SimpleTask" classpath="${build.dir}"/>
+	          <simpletask/>
+		</target>
+		<target name="messagetask" depends="compile">
+		    <taskdef name="message" classname="com.ant.MessageTask"
+							classpath="${build.dir}"/>
+		    <property name = "the.message" value="blue scooter"/>
+			<taskdef name="message2" classname="com.ant.MessageTask2"
+										classpath="${build.dir}"/>
+		    <message message="${the.message}"/>
+			<message2>${the.message}</message2>
+			 <taskdef name="SelectBuildPhase" classname="com.ant.MessageTask"
+										classpath="${build.dir}"/>
+		</target>
+		<target  name="clean">
+		       <delete  dir="${build.dir}"/>
+		</target>
+		<target  name="main" depends="simpletask,messagetask"/>
+</project>

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <project name="fax" basedir="." default="build">
-	<property name="src.dir" value="src"/>
+	<property name="src.dir" value="ant"/>
 	<property name="web.dir" value="web"/>
 	<property name="build.dir" value="${web.dir}/WEB-INF/classes"/>
 	<property name="name" value="fax"/>
@@ -18,11 +18,7 @@
 	      </javac>
 	   	<jar destfile = "${web.dir}/WEB-INF/lib/test.jar"
 	   	   basedir = "${build.dir}"
-	   		includes = "**/Test.class">
-	   	   <manifest>
-	   	      <attribute name = "Main-Class" value = "com.tutorialspoint.util.FaxUtil"/>
-	   	   </manifest>
-
+	   		includes = "**/*.class">
 	   	</jar>
 	   	<war destfile = "release/fax.war" webxml = "${web.dir}/WEB-INF/web.xml">
 

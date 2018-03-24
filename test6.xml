@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<project name="TestCustomTask" default="test">  
+    <target name="init">  
+    </target>  
+    <target name="test" depends="init">  
+    	<property name = "the.message" value="blue scooter"/>
+    	<message message="${the.message}"/>
+    </target>  
+</project> 
