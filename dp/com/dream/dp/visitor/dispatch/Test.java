@@ -16,5 +16,14 @@ public class Test {
 		Object object = a+"c";
 		String b = "abc";
 		System.out.println(object.equals(b));
+		
+		Point p1 = new Point();
+		Point p2 = new ColorPoint();
+		//静态多分派
+		p1.oper(1);
+		p1.oper(1,2);
+		//动态单分派
+		p1.draw(null);
+		p2.draw(null);
 	}
 }
