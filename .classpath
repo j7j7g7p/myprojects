@@ -11,6 +11,8 @@
 	<classpathentry kind="src" path="newjdk"/>
 	<classpathentry kind="src" path="mq"/>
 	<classpathentry kind="src" path="ant"/>
+	<classpathentry kind="src" path="xml"/>
+	<classpathentry kind="src" path="jna"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="lib" path="lib/javamail-1.4.4/mail.jar"/>
 	<classpathentry kind="lib" path="lib/javamail-1.4.4/lib/dsn.jar"/>
@@ -45,6 +47,9 @@
 	<classpathentry kind="lib" path="lib/quartz/terracotta-toolkit-runtime-4.3.4.jar"/>
 	<classpathentry kind="lib" path="lib/mq/rabbitmq-client.jar"/>
 	<classpathentry kind="lib" path="lib/ant.jar"/>
+	<classpathentry kind="lib" path="lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/jna/jna-4.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/jna/jna-platform-4.1.0.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
