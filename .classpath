@@ -50,6 +50,12 @@
 	<classpathentry kind="lib" path="lib/dom4j-1.6.1.jar"/>
 	<classpathentry kind="lib" path="lib/jna/jna-4.1.0.jar"/>
 	<classpathentry kind="lib" path="lib/jna/jna-platform-4.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/spring/com.springsource.net.sf.cglib-2.2.0.jar"/>
+	<classpathentry kind="lib" path="lib/spring/com.springsource.org.apache.commons.logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/spring/spring-beans-3.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring/spring-context-3.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring/spring-core-3.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring/spring-expression-3.2.0.RELEASE.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
