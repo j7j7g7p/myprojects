@@ -1,6 +1,6 @@
 package proxy.dynamicProxy_basedonJDK;
 
-public class Core implements ICore {
+public class Core extends Super implements ICore {
 	public void sing(){
 		System.out.println("sing...");
 	}
