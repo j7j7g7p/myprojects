@@ -1,7 +1,7 @@
 package sort.change;
 
 /**
- * 时间复杂度：O(n)~O(n*n) -- O(n*n)
+ * 时间复杂度：O(n)~O(n²) -- O(n²)
  * 空间复杂度：O(1)
  */
 public class BubbleSort{

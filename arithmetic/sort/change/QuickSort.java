@@ -2,7 +2,7 @@ package sort.change;
 
 import java.util.Arrays;
 /**
- * 时间复杂度：O(nlog2n)~O(n*n) -- O(nlog2n)
+ * 时间复杂度：O(nlog2n)~O(n²) -- O(nlog2n)
  * 空间复杂度：O(nlog2n)
  */
 public class QuickSort{
