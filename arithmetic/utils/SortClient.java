@@ -8,6 +8,7 @@ import sort.change.BubbleSort;
 import sort.change.QuickSort;
 import sort.insert.InsertSort;
 import sort.insert.ShellSort;
+import sort.merge.MergeSort;
 import sort.select.SelectSort;
 
 public class SortClient {
@@ -48,6 +49,14 @@ public class SortClient {
 		int[] arr = ArithUtil.getNumberArray(10);
 		System.out.println("before sort:"+Arrays.toString(arr));
 		SelectSort.sort(arr);
+		System.out.println("after sort:"+Arrays.toString(arr));
+	}
+
+	@Test
+	public void mergeSort() {
+		int[] arr = ArithUtil.getNumberArray(10);
+		System.out.println("before sort:"+Arrays.toString(arr));
+		MergeSort.sort(arr);
 		System.out.println("after sort:"+Arrays.toString(arr));
 	}
 }
